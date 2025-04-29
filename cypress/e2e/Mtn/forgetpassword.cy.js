@@ -7,6 +7,7 @@ describe('example to-do app', () => {
 
 it('forget password', () => {
     cy.get('.forgot-password').click()
-
+    cy.get('.input-item.ion-invalid > .ng-untouched > .native-input').type("muminabulia@yopmail.com")
+    cy.get('.ion-text-center > .ion-color').click()
 })
 })
